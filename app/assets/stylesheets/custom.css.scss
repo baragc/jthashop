@@ -1,0 +1,47 @@
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body{
+	background-color: #F5F5F1;
+	color: #333333;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-navbar-fixed-top{
+	background-color: #EFEFEB;
+	border-bottom: 1px solid #EFEFEB;
+	width: 100%;
+}
+
+.navbar-default .navbar-brand {
+	font-family: Helvetica, georgia, serif;
+	font-weight: 400;
+	color: #d5641c;
+	font-size: 30px;
+}
+.navbar-default .navbar-nav > li > a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #0192B5;
+}
+
+.center {
+	text-align: center;
+}
+
+.col-md-6 {
+
+	h3{
+		font-size: 45px;
+	}
+
+	h4{
+		font-size: 25px;
+	}
+
+	p{
+		font-size: 18px;
+  	}
+}
