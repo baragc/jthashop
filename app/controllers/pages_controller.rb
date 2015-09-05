@@ -7,4 +7,8 @@ class PagesController < ApplicationController
 
   def welcome
   end
+
+  def product
+  	@listings_product = Listing.all
+  end
 end

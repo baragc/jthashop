@@ -1,0 +1,13 @@
+<div class="row">
+	<% @listings_product.each do |listing| %>
+	<div class="col-md-3">
+		<div class="thumbnail">
+			<%= image_tag listing.image.url %>
+			<div class="action">
+				<h4><%= listing.name %></h4>
+				<p><%= listing.description %></p>
+			</div> 
+		</div>
+	</div>
+	<% end %>
+</div>
