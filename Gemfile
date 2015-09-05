@@ -3,6 +3,7 @@ gem "paperclip", "~> 4.3"
 gem 'bootstrap-sass', '~> 3.3.5'
 gem "paperclip-dropbox", ">= 1.1.7"
 gem "figaro"
+gem 'devise'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

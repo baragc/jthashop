@@ -13,9 +13,9 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
-      <li><a href="/pages/about">ผลิตภัณฑ์</a></li>
-      <li><a href="/pages/about">เกี่ยวกับเรา</a></li>
-      <li><a href="/pages/contact">ติดต่อเรา</a></li>
+      <li><%= link_to 'เกี่ยวกับเรา', pages_about_path %></li>
+      <li><%= link_to 'ติดต่อเรา', pages_contact_path %></li>
+      <li><%= link_to 'ร่วมงานกับเรา' %></li>
     </ul>
 
     <form class="navbar-form navbar-left" role="search">
@@ -26,6 +26,13 @@
     </form>
 
     <ul class="nav navbar-nav navbar-right">
+      <% if user_signed_in? %>
+          <li><%= link_to 'แก้ไขข้อมูล', edit_user_registration_path %></li>
+          <li><%= link_to 'ออกจากระบบ', destroy_user_session_path, method: :delete %></li>
+      <% else %>
+          <li><%= link_to 'เข้าสู่ระบบ', new_user_session_path %></li>
+          <li><%= link_to 'สมัครสมากชิก', new_user_registration_path %></li>    
+      <% end %>    
     </ul>
   </div><!-- /.navbar-collapse -->
 </nav>
