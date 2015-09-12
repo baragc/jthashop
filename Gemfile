@@ -4,6 +4,7 @@ gem 'bootstrap-sass', '~> 3.3.5'
 gem "paperclip-dropbox", ">= 1.1.7"
 gem "figaro"
 gem 'devise'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
